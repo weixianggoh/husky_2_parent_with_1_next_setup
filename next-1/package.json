@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "postinstall": "rm -rf ./.husky && husky install && husky add .husky/commit-msg \"npm run commitlint -e\" && husky add .husky/pre-commit \"npx lint-staged\"",
+        "postinstall": "rm -rf ./.husky && cd .. && husky install next-1/.husky && husky add next-1/.husky/commit-msg \"cd ./next-1 && npx commitlint -e\" && husky add next-1/.husky/pre-commit \"cd ./next-1 && npx lint-staged\"",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",

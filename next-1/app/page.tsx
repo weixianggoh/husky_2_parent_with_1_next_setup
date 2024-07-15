@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 export default function Home() {
     useEffect(() => {
-        console.log('Hello, World!')
+        console.log('Hello, World 2!')
     }, [])
 
     return (
